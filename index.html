@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="play-list">
+        <div class="play-list__music"></div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Creative Music Player</h1>
+
+      <div class="bigImg">
+        <img
+          src="img/50 Cent - P.I.M.P.jpg"
+          alt="50 Cent - P.I.M.P"
+          id="big-img"
+          class="big-img"
+        />
+      </div>
+
+      <div class="music-container" id="music-container">
+        <div class="music-info" id="music-info">
+          <h4 class="title" id="title">
+            <!-- Pitbull - Hotel Room Service -->
+          </h4>
+
+          <div class="time">
+            <div class="start-time" id="start-time">00:00</div>
+            <div class="progress-container" id="progress-container">
+              <div class="progress" id="progress"></div>
+            </div>
+            <div class="end-time" id="end-time">00:00</div>
+          </div>
+
+          <div class="img-container">
+            <img
+              src="img/Pitbull - Hotel Room Service.jpg"
+              alt="50 Cent - P.I.M.P"
+              id="cover"
+            />
+          </div>
+        </div>
+
+        <audio src="music/Pitbull - Hotel Room Service.mp3" id="music"></audio>
+
+        <div class="navigation" id="navigation">
+          <button class="action-btn" id="reverse">
+            <i class="fa-solid fa-repeat"></i>
+          </button>
+
+          <button id="prev" class="action-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fa-solid fa-play"></i>
+          </button>
+
+          <button id="next" class="action-btn">
+            <i class="fa-solid fa-forward"></i>
+            <!-- <i class="fa-solid "></i> -->
+          </button>
+
+          <a class="action-btn" id="download" target="_blank">
+            <i class="fa-solid fa-diagram-next"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
